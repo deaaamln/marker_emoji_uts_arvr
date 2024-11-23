@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marker - Emoji</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0px; overflow: hidden;">
+    <a-scene embedded arjs="detectionMode:mono_and_matrix; matrixCodeType:3x3_PARITY65">
+
+        <!-- Marker with Custom -->
+        <a-marker type="pattern" url="assets/pattern/pattern-Senang.patt">
+            <!-- Yellow circle with 3D rotation animation -->
+            <a-circle 
+                color="#ffff00" 
+                material="opacity:0.6" 
+                radius="0.2" 
+                position="0 0 0" 
+                rotation="-90 0 0" 
+                animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear">
+            </a-circle>
+        </a-marker>
+
+        <a-marker type="pattern" url="assets/pattern/pattern-Sedih.patt">
+            <!-- Blue circle with 3D rotation animation -->
+            <a-circle 
+                color="#60A5FA" 
+                material="opacity:0.6" 
+                radius="0.2" 
+                position="0 0 0" 
+                rotation="-90 0 0" 
+                animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear">
+            </a-circle>
+        </a-marker>
+
+        <a-marker type="pattern" url="assets/pattern/pattern-Marah1.patt">
+            <!-- Red circle with 3D rotation animation -->
+            <a-circle 
+                color="#ff0000" 
+                material="opacity:0.6" 
+                radius="0.2" 
+                position="0 0 0" 
+                rotation="-90 0 0" 
+                animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear">
+            </a-circle>
+        </a-marker>
+
+        <a-marker type="pattern" url="assets/pattern/pattern-Terharu.patt">
+            <!-- Pink circle with 3D rotation animation -->
+            <a-circle 
+                color="#FF1493" 
+                material="opacity:0.6" 
+                radius="0.2" 
+                position="0 0 0" 
+                rotation="-90 0 0" 
+                animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear">
+            </a-circle>
+        </a-marker>
+
+        <a-marker type="pattern" url="assets/pattern/pattern-kaget11.patt">
+            <!-- Green circle with 3D rotation animation -->
+            <a-circle 
+                color="#00ff00" 
+                material="opacity:0.6" 
+                radius="0.2" 
+                position="0 0 0" 
+                rotation="-90 0 0" 
+                animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 4000; easing: linear">
+            </a-circle>
+        </a-marker>
+
+        <a-entity camera> 
+            <a-cursor></a-cursor>
+        </a-entity>
+</body>
+</html>
+
